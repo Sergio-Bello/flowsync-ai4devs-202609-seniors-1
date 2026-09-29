@@ -22,14 +22,21 @@ Borra el ejemplo de abajo cuando escribas el primero.
 
 ## Prompt 1
 
-**Modelo:** Opus 1M xHigh
+**Modelo:** Opus 5.5
 **Herramienta:** Claude Code
 
 ```
-Este es el ejemplo. Bórralo.
+Escribe la spec de lo que hace el código de este proyecto, pero solo en relación a la vertical de cuentas y acceso (es decir, registro, inicio de sesión, sesión y perfil). Nada que no sea de cuentas y acceso. La spec tanto de backend como de frontend. Aplica este formato: 
 
-El prompt va aquí dentro, entero y con sus saltos de línea,
-para que se sepa dónde empieza y dónde acaba.
+Arriba, un ## Purpose de una o dos frases: para qué existe esta capability.
+
+Debajo, ## Requirements, y colgando de él ### Requirement: en los que el sistema SHALL hacer algo.
+
+Bajo cada requisito, al menos un #### Scenario: de cuatro almohadillas, con dos viñetas: **WHEN** y **THEN**. No hay casilla para el GIVEN: la precondición se mete dentro del WHEN.
+
+En castellano, salvo las mayúsculas de la RFC 2119
+
+Bajo ninguna circunstancia incluyas nada de ADDED, MODIFIED ni REMOVED. Limitate a describir lo observable (lo que una persona puede ver y hacer) y no incluyas aspectos técnicos o detalles de implementación (como nombres de clases o archivos, o rutas de codigo)
 ```
 
-**Qué salió:** (opcional, una línea) funcionó a la primera / tuve que insistir / me inventó una ruta que no existe.
+**Qué salió:** Funcionó a la primera, enumeró los requisitos definidos tambien mencionó cuatro puntos del funcionamiento que no sabía si eran intencionados o fallos
