@@ -22,14 +22,41 @@ Borra el ejemplo de abajo cuando escribas el primero.
 
 ## Prompt 1
 
-**Modelo:** Opus 1M xHigh
+**Modelo:** Opus 5.5
 **Herramienta:** Claude Code
 
 ```
-Este es el ejemplo. Bórralo.
-
-El prompt va aquí dentro, entero y con sus saltos de línea,
-para que se sepa dónde empieza y dónde acaba.
+Crea un agente spec-tests-creator que implemente los tests de un requisito y sus escenarios siguiendo el stack, formato y estilo de los que hay en backend/tests/functional/auth
 ```
 
-**Qué salió:** (opcional, una línea) funcionó a la primera / tuve que insistir / me inventó una ruta que no existe.
+**Qué salió:** Creo el agente pero comenzo a subir a git
+
+
+## Prompt 1
+
+**Modelo:** Opus 5.5
+**Herramienta:** Claude Code
+
+```
+No hagas nada a nivel de git. Lo hare yo manualmente
+```
+
+**Qué salió:** Salio bien
+
+## Prompt 1
+
+**Modelo:** Opus 5.5
+**Herramienta:** Claude Code
+
+```
+Utilizando el agente spec-tests-creator genera los test para el requisito ### Requirement: Lo que cada tarea muestra de su responsable y sus escenarios. Escribe los tests en backend/tests/functional/tasks/
+```
+
+**Qué salió:** Salio bien
+
+
+
+
+
+
+
